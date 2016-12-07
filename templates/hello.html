@@ -1,0 +1,18 @@
+<!doctype html>
+<head>
+<script type="text/javascript" src="/static/brython/src/brython.js"></script>
+</head>
+<script type="text/python3">
+  from browser import document, alert
+  __debugger__ 
+  alert("Hello %s !" % "foo")
+  document["content"].html = "Hello from brython"
+</script>
+<body onload="brython()">
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+</body>

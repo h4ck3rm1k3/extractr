@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <script type='application/javascript' src="https://code.jquery.com/jquery-3.1.1.js"/>
+    <!--
+	https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js
+      -->
+
+    <script type='application/javascript'>    
+    </script>
+    <!--
+	<script type='application/javascript' src = 'https://en.wikipedia.org/w/api.php?action=parse&callback=process&format=json&page=Education+in+Pristina&prop=text&section=16&sectionpreview=1&contentmodel=wikitext'/>
+	-->
+    
+  </head>
+  <body>
+    <div id='section'></div>
+    <div id='parsed'></div>
+
+    <script type='application/javascript'>    
+
+
+      function process(data){
+     
+      var html = data.parse.text['*'];
+	  //document.write(html);
+	  $('#section').append(html);
+      var table = $(".wikitable");
+
+      if (table == null) {
+      return 0;
+      }
+      
+      var headers = [];
+      table.find('tr:nth-child(1) td b').each(
+      function () {
+      headers.push( $(this).html());
+      }    
+      );
+      
+      var rows = [];
+      var rcount = 0;
+      table.find('tr').each(
+      function () {
+      if (rcount > 0) {
+      obj={}
+      var ccount = 0;
+      $(this).find('td').each(
+      function () {
+      obj[headers[ccount]]=$(this).html();
+      ccount= ccount+1
+      }    
+      );		   
+      rows.push(obj);
+      }
+      
+      rcount = rcount +1;
+      }
+
+      );
+      var json = JSON.stringify(rows);
+      //$('html').replaceWith(json);
+      $('#parsed').append(json);
+      // document.open();
+      // document.write(json);
+      // document.close();
+      return rows;
+      };
+
+function main() {
+
+
+    $.ajax({
+	url: 'https://en.wikipedia.org/w/api.php?',
+	type: 'GET',
+	dataType: 'jsonp',
+	data: {
+	    'action':'parse',
+	    'format':'json',
+	    'prop':'text',
+	    'section':'16',
+	    'contentmodel':'wikitext',
+	    'page':'Education in Pristina',
+	},
+	success: function(data) {
+	    process(data); //All of the data        
+	}});
+   
+};
+
+// load jQuery and execute the main function
+      $(document).ready(function()
+      {
+      main();
+      });
+    </script>
+    
+  </body>
+</html>

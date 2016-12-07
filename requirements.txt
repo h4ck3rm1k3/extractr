@@ -1,0 +1,22 @@
+-e git+https://github.com/brython-dev/brython.git#egg=brython
+-e git+https://github.com/pallets/flask.git#egg=flask
+
+#git://git.launchpad.net/python-pouchdb
+#git://github.com/BernardoGO/PyDB.git
+#git://github.com/JohnOmernik/sqlalchemy-drill.git
+#git://github.com/PierreQuentel/PyDbLite.git
+#git://github.com/airbnb/superset.git
+#git://github.com/djc/couchdb-python.git
+#git://github.com/histrio/py-couchdb.git
+#git://github.com/kageurufu/flask-couchdb.git
+#git://github.com/lepture/flask-wtf.git
+#git://github.com/pallets/jinja.git
+#git://github.com/perchouli/codernitydb.git
+#git://github.com/pouchdb/pouchdb.git
+#git://github.com/pouchdb/pouchdb.git
+#git://github.com/sirn/flask-couchdbkit.git
+#git://github.com/waylan/Python-Markdown.git
+#git://github.com/zzzeek/sqlalchemy.git 
+
+#hg clone git://bitbucket.org/wkornewald/django-mediagenerator
+#hg clone https://bitbucket.org/leafstorm/flask-couchdb
