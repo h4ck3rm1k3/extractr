@@ -1,5 +1,14 @@
--e git+https://github.com/brython-dev/brython.git#egg=brython
--e git+https://github.com/pallets/flask.git#egg=flask
+#-e git+https://github.com/brython-dev/brython.git#egg=brython
+#-e git+https://github.com/pallets/flask.git#egg=flask
+#-e git+https://github.com/mgood/flask-debugtoolbar.git#egg=flaskdebugtoolbar
+#-e git+https://github.com/pallets/markupsafe.git#egg=markupsafe
+# itsdangerous
+#-e git+https://github.com/pallets/itsdangerous.git#egg=itsdangerous
+# Blinker
+#-e git+https://github.com/jek/blinker.git#egg=blinker
+#-e git+https://github.com/bollwyvl/flask-reloaded.git#egg=flaskreloaded
+-e git+https://github.com/pallets/werkzeug.git#egg=werkzeug
+
 
 #git://git.launchpad.net/python-pouchdb
 #git://github.com/BernardoGO/PyDB.git
@@ -20,3 +29,4 @@
 
 #hg clone git://bitbucket.org/wkornewald/django-mediagenerator
 #hg clone https://bitbucket.org/leafstorm/flask-couchdb
+

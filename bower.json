@@ -1,0 +1,20 @@
+{
+  "name": "extractr",
+  "homepage": "https://github.com/h4ck3rm1k3/extractr",
+  "authors": [
+    "james mike dupont <jamesmikedupont@gmail.com>"
+  ],
+  "description": "Extraction of data from websites",
+  "main": "",
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
