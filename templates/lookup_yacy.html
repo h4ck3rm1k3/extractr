@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <script type='application/javascript' src="https://code.jquery.com/jquery-3.1.1.js"/>
+    <script type='application/javascript'>    
+    </script>
+  </head>
+  <body>
+    <form id="targer">
+      <input id='name'></input>
+    </form>
+    <div id='response'></div>
+    <div id='parsed'></div>
+
+    <script type='application/javascript'>    
+
+
+
+function process(d){
+    var json = JSON.stringify(d);
+    var html = $('<div><pre>'+json+'</pre></div>')
+    html.attr('id',d['id']);
+    html.click(function(){
+alert(d);
+
+    })
+    $('#response').append(html);
+}
+
+function query(text) {
+    $.get(
+	{
+
+	    url: 'https://search.freehuman.fr/yacysearch.json?',
+	    //query=freedom&resource=global&urlmaskfilter=.*&prefermaskfilter=&nav=all
+	    dataType: 'jsonp',
+	    data: {
+		'urlmaskfilter':'.*',
+		'prefermaskfilter':'',
+		'nav':'all',
+		'query': text,
+	    },
+	    'success': function (data, status, jqxhr) {
+		console.log(data)
+		$.each(data['search'], function(index, value) {
+		    // do your stuff here
+		    process(value)
+		});		
+		//console.log(status)
+		//console.log(jqxhr)
+	    }
+	}
+    );
+
+}
+
+$( "#target" ).submit(function( event ) {
+    alert( "Handler for .submit() called." );
+    event.preventDefault();
+});
+
+$('#name').keypress(function (e) {
+    if (e.which == 13) {
+	var text = $( "#name" ).val();
+	query(text);
+	return false; 
+    }
+});     
+
+
+
+// load jQuery and execute the main function
+$(document).ready(function()
+		  {
+		      //main();
+		  });
+    </script>
+    
+  </body>
+</html>

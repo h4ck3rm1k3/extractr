@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <meta charset="utf-8" /> 
+    <script type='application/javascript' src="https://code.jquery.com/jquery-3.1.1.js"/>
+    <!--
+	https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js
+      -->
+
+    <script type='application/javascript'>    
+    </script>
+    <!--
+	<script type='application/javascript' src = 'https://en.wikipedia.org/w/api.php?action=parse&callback=process&format=json&page=Education+in+Pristina&prop=text&section=16&sectionpreview=1&contentmodel=wikitext'/>
+	-->
+    
+  </head>
+  <body>
+    <form id="targer">
+      <input id='name'></input>
+    </form>
+    <div id='response'></div>
+    <div id='parsed'></div>
+
+    <script type='application/javascript'>    
+
+//https://search.freehuman.fr/yacysearch.json?query=freedom&resource=global&urlmaskfilter=.*&prefermaskfilter=&nav=all
+
+
+//https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q42
+function getEntities(q, html){
+    $.get(
+	{
+	    url: 'https://www.wikidata.org/w/api.php?',
+	    dataType: 'jsonp',
+	    data: {
+		'action':'wbgetentities',
+		'ids': q,
+		'format':'json',
+	    },
+	    'success': function (data, status, jqxhr) {
+		$.each(data['entities'], function(index, value) {
+		    // do your stuff here
+		    //process(value)
+		    console.log(value);
+		});
+	    }
+	}
+    );
+
+}
+
+function getClaims(q, html){
+    $.get(
+	{
+	    url: 'https://www.wikidata.org/w/api.php?',
+	    dataType: 'jsonp',
+	    data: {
+		'action':'wbgetclaims',
+		'entity': q,
+		'format':'json',
+	    },
+	    'success': function (data, status, jqxhr) {
+		$.each(data['claims'], function(index, value) {
+		    // do your stuff here
+		    //process(value)
+		    console.log(value);
+		});
+	    }
+	}
+    );
+
+}
+//api.php?action=wbgetclaims&entity=Q42
+
+function process(d){
+    var json = JSON.stringify(d);
+    var html = $('<div><pre>'+json+'</pre></div>')
+    html.attr('id',d['id']);
+    html.click(function(){
+	//alert(d);
+	getClaims(d['id'],html);
+	getEntities(d['id'],html);
+    })
+    $('#response').append(html);
+}
+
+function query(text) {
+    
+    //success: function(data) {	      process(data);   }
+    
+    
+    $.get(
+	{
+	    //https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Funk&format=json&language=en&uselang=en&type=item
+	    url: 'https://www.wikidata.org/w/api.php?',
+	    //      type: 'GET',
+	    dataType: 'jsonp',
+	    data: {
+		'action':'wbsearchentities',
+		'limit':'10',
+		//'call'
+		//'formatversion': 2,
+		'namespace':'0',
+		'format':'json',
+		'language':'en',
+		'uselang':'en',
+		'type':'item',
+		//'suggest': True,
+		'search': text,
+	    },
+	    'success': function (data, status, jqxhr) {
+
+		$.each(data['search'], function(index, value) {
+		    // do your stuff here
+		    process(value)
+		});
+		
+
+		//console.log(data)
+		//console.log(status)
+		//console.log(jqxhr)
+	    }
+	}
+    );
+
+}
+
+$( "#target" ).submit(function( event ) {
+    alert( "Handler for .submit() called." );
+    event.preventDefault();
+});
+
+$('#name').keypress(function (e) {
+    if (e.which == 13) {
+	var text = $( "#name" ).val();
+	query(text);
+	return false; 
+    }
+});     
+
+
+
+// load jQuery and execute the main function
+$(document).ready(function()
+		  {
+		      //main();
+		  });
+    </script>
+    
+  </body>
+</html>

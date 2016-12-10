@@ -15,8 +15,16 @@ from flask import render_template
 def hello(name=None):
     return render_template('hello.html', name=name)
 
+import owlready
+from owlready import *
+onto_path.append(os.path.dirname(__file__))
+onto = Ontology("http://test.org/floss-events.owl")
+onto.name = "floss-events"
+onto.load()
 
-
+@app.route('/onto/')
+def info():
+    return "Hello"
 
 if __name__ == "__main__":
     app.run()

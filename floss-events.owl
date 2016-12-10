@@ -1,0 +1,2659 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events">
+    <Prefix name="" IRI="http://www.semanticweb.org/mdupont/ontologies/2016/11/floss-events#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CodeOfConduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventMeetupProposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#County"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JavaScriptCodingRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdvertiserRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Media"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Past"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planned"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhatRelatedMedia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DoNoTrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchiverRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenId"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VersionLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrintedBanner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPWhereLat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MembershipDataDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Current"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceAvailable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OAuth"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventToWhom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Workshop"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwitterProfilePage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTravelResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConferenceTrack"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSpeakerProposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolunteerRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScheduledTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tutorial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hallway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForTestamonials"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mozilla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPlusPlusModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReleaseSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogisticsRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventVenueAvailableTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkillsManagerRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Point"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Document_Foundation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XMLDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventSchedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IRCChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disclousure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPToWho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonProfitOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolicyMakingRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeAndOpenSourcePolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StateModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSSCodingRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LegalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InvoiceItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityMap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GooglePlusPage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTalkCommentPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Authentification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Talk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarkdownModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataContributorRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventOnTopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareTestingRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSharingEvent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SocialLink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainerRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventFavoriteEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSpeakerNotAvailableTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symbol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceConsumer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPWhen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firewall"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPHow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSponsorProposal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhoContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceNeeded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Banner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTalkMediaPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForSponsors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForumPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractDocument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenStreetmap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supported"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediaWikiPage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LinkedInLink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeveloperList"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudentRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stickers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Floor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MailingListEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommercialCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DocumentationWriterRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWherePaymentIsMade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandardDataFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Developer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractMembershipDocument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wikipedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModellingActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DirectionSigns"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VotingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportationAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwitterHandle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FourSquarePage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Path"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WikiSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Website"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FundingReviewRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MercurialRepository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebsiteDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventUserStudent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventProposesTalkOnTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventVenueNotAvailableTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Society"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatrixRoom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTalkQuestionPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YAMLModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicationVenue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectMeeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessIncubator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Community"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForumThread"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventHow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TopicName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductAwareness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TalkSubmissionEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventVenue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdvertisingAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForExhibits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrandRecognition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InConflict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTalkCodePost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Makerspace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teeshirt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BugReportingRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Accessibility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSponsorGovernment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecruiterCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaxiCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroupMembershipRole"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPWhy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fedora_Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MembershipRecruiterRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhoContactRepresentative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenDataFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventContactPhone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BazaarRepository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SearchActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrackerItemThread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DatabaseServer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSpeakerAvailableTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSVModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IssueTracker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Offer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContributorRecruiterRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#URL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MailingListThread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventStateModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventLinkToAbstractOnTalk"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventVenueProposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TelegramChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventSeries"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FacebookLink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlackChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalSignature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecruiterRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UMLModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubversionRepository"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventBriteDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrintedTicket"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventExpressesInterestInLearning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForParticipation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airplane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForVenues"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeveloperRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invoice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Merchandise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventExpressesExpertiseInTopic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Handbook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JSONDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheckInList"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhatDirectObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamilyName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FacebookDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetaDataContributorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MailingList"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MentalResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HTMLDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MembershipJoinEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataformat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhoContactApprover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LabelingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trademark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfflineEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwitterDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DVD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FacebookPage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTalkSocialPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GitRepository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LearningEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhenFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventRatingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SponsoringRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FacebookPost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventVenueAvailablePlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreeSoftwareProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventRankingEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SQLDataModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiscussionThread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchoolDirectorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForPapers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoothSession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwitterThread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webpage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSponsor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteropereableDataFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FundraisingRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WikidataPage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SelectionActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTalkIssuePost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neighbourhood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#WhoAuthorisesPayment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#License"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TwitterLink"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#YelpPage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplicationForJoining"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceNotAvailableTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenDataPolicy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EducationalDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CDRom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebUserThrottle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Email"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceAvailableTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeakerAssistantRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareRepository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceProvider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Map"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebQualityOfService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Statutes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventManagementRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchoolTeacherRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeakerRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebClient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commitment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SkillsTestEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnowledgeContributorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WikipediaPage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTalkBlogPost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDataProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrowseActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhatRelatedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunityManagerRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TalkEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PictureContributorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganizationEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSpeakerAvailablePlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webserver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventExpressesInterestInSpeaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FacebookResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CategorizationActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WebBanner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPWhere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenStreetmapNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WikiPage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmailMarketingRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proposed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPWhereLon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPWhat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegistrationPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerMemoryModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDPWho"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserInterface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tweet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventAccomodationProposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TalkCommentEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreativeCommonsContributorRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hostel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventResourceCommitted"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DifficultyLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoderRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventAttendees"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventInviteSpeaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventSponsorCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTravelProposal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventTopicProposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InPreparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForDemos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FloorPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CallForVideos"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhenTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CommunicationsEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhoAttendee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MarketingAgency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventWhomRecievesPayment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventScheduleVote"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventScheduleRequirements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EventScheduleProposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demonstration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LanyardLink"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbstractMembershipDocument"/>
+        <Class IRI="#AbstractDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Accessibility"/>
+        <Class IRI="#UserInterface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdvertiserRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdvertisingAgency"/>
+        <Class IRI="#CommercialCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airline"/>
+        <Class IRI="#TransportationAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airplane"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApplicationForJoining"/>
+        <Class IRI="#CommunicationsEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchiverRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Authentification"/>
+        <Class IRI="#Certification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Banner"/>
+        <Class IRI="#Swag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BazaarRepository"/>
+        <Class IRI="#SoftwareRepository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#PhysicalDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoothSession"/>
+        <Class IRI="#LearningEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brand"/>
+        <Class IRI="#AbstractDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrandRecognition"/>
+        <Class IRI="#MentalResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrowseActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BugReportingRole"/>
+        <Class IRI="#SoftwareRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusCompany"/>
+        <Class IRI="#TransportationAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusPlan"/>
+        <Class IRI="#Map"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessIncubator"/>
+        <Class IRI="#CommercialCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CDRom"/>
+        <Class IRI="#Swag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPlusPlusModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSSCodingRole"/>
+        <Class IRI="#CoderRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSVModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CV"/>
+        <Class IRI="#AbstractDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallFor"/>
+        <Class IRI="#CommunicationsEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForDemos"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForExhibits"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForPapers"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForParticipation"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForSponsors"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForTestamonials"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForVenues"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CallForVideos"/>
+        <Class IRI="#CallFor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campus"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CategorizationActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheckInList"/>
+        <Class IRI="#PhysicalDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityMap"/>
+        <Class IRI="#Map"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CodeOfConduct"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoderRole"/>
+        <Class IRI="#DeveloperRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommercialCompany"/>
+        <Class IRI="#OrganizationEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commit"/>
+        <Class IRI="#OnlineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commitment"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationVenue"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunicationsEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Community"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CommunityManagerRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerMemoryModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conference"/>
+        <Class IRI="#LearningEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConferenceTrack"/>
+        <Class IRI="#LearningEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContributorRecruiterRole"/>
+        <Class IRI="#RecruiterRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#County"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreativeCommonsContributorRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Current"/>
+        <Class IRI="#EventState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DVD"/>
+        <Class IRI="#Swag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataContributorRole"/>
+        <Class IRI="#CreativeCommonsContributorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataModel"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DatabaseServer"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demonstration"/>
+        <Class IRI="#LearningEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Developer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeveloperList"/>
+        <Class IRI="#MailingList"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeveloperRole"/>
+        <Class IRI="#SoftwareRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalSignature"/>
+        <Class IRI="#Certification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DirectionSigns"/>
+        <Class IRI="#PhysicalDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disclousure"/>
+        <Class IRI="#Commitment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiscussionThread"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#WebResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DocumentationWriterRole"/>
+        <Class IRI="#SoftwareRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalDegree"/>
+        <Class IRI="#Certification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EducationalEntity"/>
+        <Class IRI="#OrganizationEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Email"/>
+        <Class IRI="#Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailEvent"/>
+        <Class IRI="#OnlineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmailMarketingRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventAttendees"/>
+        <Class IRI="#Community"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventBriteDataModel"/>
+        <Class IRI="#WebsiteDataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventManagementRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventSchedule"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventSeries"/>
+        <Class IRI="#LearningEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventState"/>
+        <Class IRI="#EventStateModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventStateModel"/>
+        <Class IRI="#StateModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FacebookDataModel"/>
+        <Class IRI="#WebsiteDataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FacebookPage"/>
+        <Class IRI="#Webpage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FacebookPost"/>
+        <Class IRI="#OnlineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FacebookResource"/>
+        <Class IRI="#Website"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FamilyName"/>
+        <Class IRI="#Name"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firewall"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Floor"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FloorPlan"/>
+        <Class IRI="#Map"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForumPost"/>
+        <Class IRI="#OnlineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForumThread"/>
+        <Class IRI="#DiscussionThread"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourSquarePage"/>
+        <Class IRI="#Webpage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeAndOpenSourcePolicy"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreeSoftwareProject"/>
+        <Class IRI="#NonProfitOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FundingReviewRole"/>
+        <Class IRI="#FundraisingRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FundraisingRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GitRepository"/>
+        <Class IRI="#SoftwareRepository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GooglePlusPage"/>
+        <Class IRI="#Webpage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentAgency"/>
+        <Class IRI="#OrganizationEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupMembershipRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HTMLDataModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hallway"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Handbook"/>
+        <Class IRI="#Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hostel"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IRCChannel"/>
+        <Class IRI="#CommunicationVenue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identifier"/>
+        <Class IRI="#Symbol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InConflict"/>
+        <Class IRI="#EventState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InPreparation"/>
+        <Class IRI="#EventState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteropereableDataFormat"/>
+        <Class IRI="#Dataformat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invoice"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InvoiceItem"/>
+        <Class IRI="#Invoice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IssueTracker"/>
+        <Class IRI="#WebResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JSONDataModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JavaScriptCodingRole"/>
+        <Class IRI="#CoderRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KnowledgeContributorRole"/>
+        <Class IRI="#CreativeCommonsContributorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LabelingEvent"/>
+        <Class IRI="#Commit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Law"/>
+        <Class IRI="#Commitment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LearningEvent"/>
+        <Class IRI="#OfflineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LegalEntity"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#License"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogisticsRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MailingList"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MailingListEvent"/>
+        <Class IRI="#OnlineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MailingListThread"/>
+        <Class IRI="#DiscussionThread"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Makerspace"/>
+        <Class IRI="#OrganizationEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Map"/>
+        <Class IRI="#PhysicalDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarkdownModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MarketingAgency"/>
+        <Class IRI="#CommercialCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatrixRoom"/>
+        <Class IRI="#CommunicationVenue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Media"/>
+        <Class IRI="#WebResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediaWikiPage"/>
+        <Class IRI="#WikiPage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MembershipDataDocument"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MembershipJoinEvent"/>
+        <Class IRI="#CommunicationsEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MembershipRecruiterRole"/>
+        <Class IRI="#RecruiterRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Merchandise"/>
+        <Class IRI="#PhysicalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MercurialRepository"/>
+        <Class IRI="#SoftwareRepository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaDataContributorRole"/>
+        <Class IRI="#DataContributorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModellingActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Name"/>
+        <Class IRI="#Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neighbourhood"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonProfitOrganization"/>
+        <Class IRI="#OrganizationEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OAuth"/>
+        <Class IRI="#Authentification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLModel"/>
+        <Class IRI="#XMLDataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Offer"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfflineEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenDataFormat"/>
+        <Class IRI="#Dataformat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenDataPolicy"/>
+        <Class IRI="#Policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenId"/>
+        <Class IRI="#Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenStreetmapNode"/>
+        <Class IRI="#Webpage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganizationEntity"/>
+        <Class IRI="#LegalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Past"/>
+        <Class IRI="#EventState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Path"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#LegalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalDocument"/>
+        <Class IRI="#PhysicalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PictureContributorRole"/>
+        <Class IRI="#CreativeCommonsContributorRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planned"/>
+        <Class IRI="#EventState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Point"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Policy"/>
+        <Class IRI="#Commitment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolicyMakingRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poster"/>
+        <Class IRI="#Swag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrintedBanner"/>
+        <Class IRI="#Swag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrintedTicket"/>
+        <Class IRI="#PhysicalDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductAwareness"/>
+        <Class IRI="#MentalResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductCategory"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectEvent"/>
+        <Class IRI="#OfflineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectMeeting"/>
+        <Class IRI="#ProjectEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proposed"/>
+        <Class IRI="#EventState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecruiterCompany"/>
+        <Class IRI="#CommercialCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecruiterRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegistrationPeriod"/>
+        <Class IRI="#CommunicationsEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReleaseSystem"/>
+        <Class IRI="#WebResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rights"/>
+        <Class IRI="#AbstractDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SQLDataModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScheduledTask"/>
+        <Class IRI="#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School"/>
+        <Class IRI="#EducationalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SchoolDirectorRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SchoolTeacherRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SearchActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SelectionActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkillsManagerRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SkillsTestEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlackChannel"/>
+        <Class IRI="#CommunicationVenue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Society"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareCompany"/>
+        <Class IRI="#CommercialCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareRepository"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareTestingRole"/>
+        <Class IRI="#SoftwareRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeakerAssistantRole"/>
+        <Class IRI="#VolunteerRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeakerRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SponsoringRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandardDataFormat"/>
+        <Class IRI="#Dataformat"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StateModel"/>
+        <Class IRI="#UMLModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Statutes"/>
+        <Class IRI="#Commitment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stickers"/>
+        <Class IRI="#Swag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudentRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubversionRepository"/>
+        <Class IRI="#SoftwareRepository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supported"/>
+        <Class IRI="#EventState"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swag"/>
+        <Class IRI="#Merchandise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symbol"/>
+        <Class IRI="#AbstractDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Talk"/>
+        <Class IRI="#LearningEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TalkCommentEvent"/>
+        <Class IRI="#TalkEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TalkEvent"/>
+        <Class IRI="#OnlineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TalkSubmissionEvent"/>
+        <Class IRI="#TalkEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Task"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaxiCompany"/>
+        <Class IRI="#TransportationAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teeshirt"/>
+        <Class IRI="#Swag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TelegramChannel"/>
+        <Class IRI="#CommunicationVenue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeZone"/>
+        <Class IRI="#PhysicalLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TopicName"/>
+        <Class IRI="#Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrackerItemThread"/>
+        <Class IRI="#DiscussionThread"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trademark"/>
+        <Class IRI="#Rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainCompany"/>
+        <Class IRI="#TransportationAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainerRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportationAgency"/>
+        <Class IRI="#CommercialCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tutorial"/>
+        <Class IRI="#Workshop"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tweet"/>
+        <Class IRI="#OnlineEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwitterDataModel"/>
+        <Class IRI="#WebsiteDataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwitterHandle"/>
+        <Class IRI="#Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwitterProfilePage"/>
+        <Class IRI="#Webpage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwitterThread"/>
+        <Class IRI="#DiscussionThread"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UMLModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#URL"/>
+        <Class IRI="#Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UserRole"/>
+        <Class IRI="#SoftwareRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#PhysicalThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VersionLabel"/>
+        <Class IRI="#Identifier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class IRI="#Media"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolunteerRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VotingEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebBanner"/>
+        <Class IRI="#Image"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebClient"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebQualityOfService"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebResource"/>
+        <Class IRI="#DataResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebUserThrottle"/>
+        <Class IRI="#WebQualityOfService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webpage"/>
+        <Class IRI="#WebResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webserver"/>
+        <Class IRI="#WebResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Website"/>
+        <Class IRI="#WebResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WebsiteDataModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WikiPage"/>
+        <Class IRI="#Webpage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WikiSystem"/>
+        <Class IRI="#Website"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WikidataPage"/>
+        <Class IRI="#WikipediaPage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WikipediaPage"/>
+        <Class IRI="#MediaWikiPage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Workshop"/>
+        <Class IRI="#LearningEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XMLDataModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YAMLModel"/>
+        <Class IRI="#DataModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#YelpPage"/>
+        <Class IRI="#Webpage"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BrowseActivity"/>
+        <Class IRI="#CategorizationActivity"/>
+        <Class IRI="#ModellingActivity"/>
+        <Class IRI="#SearchActivity"/>
+        <Class IRI="#SelectionActivity"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventAccomodationProposal"/>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventExpressesExpertiseInTopic"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventExpressesInterestInLearning"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventExpressesInterestInSpeaking"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventFavoriteEvent"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventHow"/>
+        <ObjectProperty IRI="#EventProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventInviteSpeaker"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventLinkToAbstractOnTalk"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventMeetupProposal"/>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventOnTopic"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventProperty"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventProposesTalkOnTopic"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventRankingEvent"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventRatingEvent"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceAvailable"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceAvailableTime"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceCommitted"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceConsumer"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceNeeded"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceNotAvailableTime"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventResourceProvider"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventScheduleProposal"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventScheduleRequirements"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventScheduleVote"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSharingEvent"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSpeakerAvailablePlace"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSpeakerAvailableTime"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSpeakerNotAvailableTime"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSpeakerProposal"/>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSponsor"/>
+        <ObjectProperty IRI="#EventWho"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSponsorCompany"/>
+        <ObjectProperty IRI="#EventSponsor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSponsorGovernment"/>
+        <ObjectProperty IRI="#EventSponsor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventSponsorProposal"/>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTalkBlogPost"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTalkCodePost"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTalkCommentPost"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTalkIssuePost"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTalkMediaPost"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTalkQuestionPost"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTalkSocialPost"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventToWhom"/>
+        <ObjectProperty IRI="#EventProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTopicProposal"/>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTravelProposal"/>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventTravelResource"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventUser"/>
+        <ObjectProperty IRI="#EventWho"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventUserStudent"/>
+        <ObjectProperty IRI="#EventUser"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventVenue"/>
+        <ObjectProperty IRI="#EventWhere"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventVenueAvailablePlace"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventVenueAvailableTime"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventVenueNotAvailableTime"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventVenueProposal"/>
+        <ObjectProperty IRI="#EventResourceProposal"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhat"/>
+        <ObjectProperty IRI="#EventProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhatDirectObject"/>
+        <ObjectProperty IRI="#EventWhat"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+        <ObjectProperty IRI="#EventWhat"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhatRelatedEvent"/>
+        <ObjectProperty IRI="#EventWhatDirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhatRelatedMedia"/>
+        <ObjectProperty IRI="#EventWhatDirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhen"/>
+        <ObjectProperty IRI="#EventProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhenFrom"/>
+        <ObjectProperty IRI="#EventWhen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhenTo"/>
+        <ObjectProperty IRI="#EventWhen"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhere"/>
+        <ObjectProperty IRI="#EventProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWherePaymentIsMade"/>
+        <ObjectProperty IRI="#EventWhere"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWho"/>
+        <ObjectProperty IRI="#EventProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhoAttendee"/>
+        <ObjectProperty IRI="#EventWho"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhoContact"/>
+        <ObjectProperty IRI="#EventWho"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhoContactApprover"/>
+        <ObjectProperty IRI="#EventWho"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhoContactRepresentative"/>
+        <ObjectProperty IRI="#EventWho"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhomRecievesPayment"/>
+        <ObjectProperty IRI="#EventWhatIndirectObject"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EventWhy"/>
+        <ObjectProperty IRI="#EventProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#WhoAuthorisesPayment"/>
+        <ObjectProperty IRI="#EventWho"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#needs"/>
+        <ObjectProperty IRI="#wants"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#wants"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EventProperty"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EventVenue"/>
+        <Class IRI="#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EventVenue"/>
+        <Class IRI="#LearningEvent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wants"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DifficultyLevel"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DoNoTrack"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventContactPhone"/>
+        <DataProperty IRI="#EventDPWho"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPHow"/>
+        <DataProperty IRI="#EventDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPToWho"/>
+        <DataProperty IRI="#EventDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPWhat"/>
+        <DataProperty IRI="#EventDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPWhen"/>
+        <DataProperty IRI="#EventDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPWhere"/>
+        <DataProperty IRI="#EventDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPWhereLat"/>
+        <DataProperty IRI="#EventDPWhere"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPWhereLon"/>
+        <DataProperty IRI="#EventDPWhere"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPWho"/>
+        <DataProperty IRI="#EventDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDPWhy"/>
+        <DataProperty IRI="#EventDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EventDataProperty"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#FacebookLink"/>
+        <DataProperty IRI="#SocialLink"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LanyardLink"/>
+        <DataProperty IRI="#SocialLink"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#LinkedInLink"/>
+        <DataProperty IRI="#SocialLink"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SocialLink"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TwitterLink"/>
+        <DataProperty IRI="#SocialLink"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EventDataProperty"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#DifficultyLevel"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DoNoTrack"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventContactPhone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPHow"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPToWho"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPWhat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPWhen"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPWhere"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPWhereLat"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPWhereLon"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPWho"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDPWhy"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDataProperty"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FacebookLink"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LanyardLink"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LinkedInLink"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SocialLink"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TwitterLink"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+        <Datatype abbreviatedIRI="rdf:PlainLiteral"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Talk</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lecture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Talk</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Talk</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
