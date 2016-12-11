@@ -7,8 +7,9 @@
 # Blinker
 #-e git+https://github.com/jek/blinker.git#egg=blinker
 #-e git+https://github.com/bollwyvl/flask-reloaded.git#egg=flaskreloaded
--e git+https://github.com/pallets/werkzeug.git#egg=werkzeug
-
+#-e git+https://github.com/pallets/werkzeug.git#egg=werkzeug
+#-e git+https://github.com/vakata/jstree.git#egg=jstree
+-e git+https://github.com/lobeck/flask-bower.git#egg=flaskbower
 
 #git://git.launchpad.net/python-pouchdb
 #git://github.com/BernardoGO/PyDB.git
@@ -26,7 +27,6 @@
 #git://github.com/sirn/flask-couchdbkit.git
 #git://github.com/waylan/Python-Markdown.git
 #git://github.com/zzzeek/sqlalchemy.git 
-
 #hg clone git://bitbucket.org/wkornewald/django-mediagenerator
 #hg clone https://bitbucket.org/leafstorm/flask-couchdb
 

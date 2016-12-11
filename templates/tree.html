@@ -1,0 +1,24 @@
+<html>
+  <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.js') }}"></script>
+  <script src="{{ url_for('bower.static', filename='jstree/dist/jstree.js') }}"></script>
+  <body>
+    hello
+
+<div id="container">
+  <ul>
+    <li>Root node
+      <ul>
+        <li>Child node 1</li>
+        <li>Child node 2</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<script>
+$(function() {
+  $('#container').jstree();
+});
+</script>
+    
+  </body>
+</html>
