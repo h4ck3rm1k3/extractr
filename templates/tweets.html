@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Twitter</title>
+    <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.js') }}"></script>
+    <script src="{{ url_for('bower.static', filename='bootstrap/dist/js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('bower.static', filename='twitter-fetcher/js/twitterFetcher.js') }}"></script>
+  </head>
+  <body>
+    <div id="example1"></div>
+    <script>
+      $(function() {
+      var configProfile = {
+      "profile": {"screenName": 'h4ck3rm1k3'},
+      "domId": 'example1',
+      "maxTweets": 10,
+      "enableLinks": true, 
+      "showUser": true,
+      "showTime": true,
+      "showImages": false,
+      "lang": 'en'
+      };
+      twitterFetcher.fetch(configProfile);
+    })
+    </script>
+  </body>
+</html>

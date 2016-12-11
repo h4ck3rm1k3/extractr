@@ -76,6 +76,10 @@ def treed3(name=None):
     hier = cleantree()
     return render_template('treed3.html',hier=hier)
 
+@app.route('/tweets/')
+def tweets():
+    return render_template('tweets.html')
+
 #
 #Property: EventWho,
 #type:              Agent,
