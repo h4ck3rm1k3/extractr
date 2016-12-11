@@ -6,7 +6,26 @@
     <title>Collapsible Tree Example</title>
     <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.js') }}"></script>
     <script src="{{ url_for('bower.static', filename='d3/d3.js') }}"></script>
-    <script src="{{ url_for('bower.static', filename='d3-hierarchy/build/d3-hierarchy.js') }}"></script> 
+    <script src="{{ url_for('bower.static', filename='d3-hierarchy/build/d3-hierarchy.js') }}"></script>
+
+  <style>
+
+ .node circle {
+   fill: #fff;
+   stroke: steelblue;
+   stroke-width: 3px;
+ }
+
+ .node text { font: 12px sans-serif; }
+
+ .link {
+   fill: none;
+   stroke: #ccc;
+   stroke-width: 2px;
+ }
+ 
+    </style>
+
   </head>
   <body>
     <div id="chart"></div>

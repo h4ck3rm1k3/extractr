@@ -36,28 +36,24 @@ import types
 import inspect
 
 def traverse(hier):
-    lt=type(hier)
-    
-    if lt==tuple:
-        obj = hier
-        name = obj[0]
-        parent = obj[1]
-        return {
-            'name': str(name),
-            'parent': str(parent),
-        }
-    elif lt==list:
-        obj = hier[0]
-        name = obj[0]
-        parent = obj[1]
-        alist = []
-        for chl in hier[1:] :# children
-            alist.append(traverse(chl))            
-        return {
-            'name': str(name),
-            'parent': str(parent),
-            'children': alist
-        }
+    ret = []
+    cobj = None
+    for obj in hier :#
+        lt=type(obj)
+        if lt==tuple: # is an object
+            name = obj[0]
+            parent = obj[1]
+            cobj= {
+                'name': str(name),
+                'parent': str(parent),
+            }
+            ret.append(cobj)            
+        elif lt==list:
+            cobj['children']=traverse(obj)
+    if len(ret) == 1:
+        return ret[0]
+    else:
+        return ret
 
 def cleantree():
     hier = inspect.getclasstree(onto.classes, unique=True)
@@ -66,8 +62,9 @@ def cleantree():
     
 @app.route('/treedata/')
 def get_tree():
+    hier2 = inspect.getclasstree(onto.classes, unique=True)
     hier = cleantree()
-    return "<html><body><h1>Hier</h1><pre>" + json.dumps(hier) +"</body></html>"
+    return "<html><body><h1>Hier</h1><pre>" + json.dumps(hier) +"<pre><h1>Input</h1><pre>" + str(hier2) +"<pre></body></html>"
 
 @app.route('/tree/')
 def tree(name=None):
