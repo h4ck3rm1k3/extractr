@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Collapsible Tree Example</title>
+    <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.js') }}"></script>
+    <script src="{{ url_for('bower.static', filename='d3/d3.js') }}"></script>
+    <script src="{{ url_for('bower.static', filename='d3-hierarchy/build/d3-hierarchy.js') }}"></script> 
+  </head>
+  <body>
+    <div id="chart"></div>
+    <svg width="960" height="2000"></svg>
+    <script>
+
+var treeData = {{  hier |tojson|safe }};
+
+function getid(d) {
+    var did = d.name;
+    return did;
+}
+
+$(function(){
+//window.tree = new d3.tree(treeData);
+// "#chart"
+//window.tree.update(treeData);
+
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height"),
+    g = svg.append("g").attr("transform", "translate(40,0)");
+
+    var tree = d3.cluster()
+	.size([height, width - 160]);
+    
+    var root = d3.hierarchy(treeData);
+    tree(root);
+    
+    var link = g.selectAll(".link")
+	.data(root.descendants().slice(1))
+	.enter().append("path")
+	.attr("class", "link")
+	.attr("d", function(d) {
+	    return "M" + d.y + "," + d.x
+		+ "C" + (d.parent.y + 100) + "," + d.x
+		+ " " + (d.parent.y + 100) + "," + d.parent.x
+		+ " " + d.parent.y + "," + d.parent.x;
+	});
+
+    var node = g.selectAll(".node")
+	.data(root.descendants())
+	.enter().append("g")
+	.attr("class", function(d) { return "node" + (d.children ? " node--internal" : " node--leaf"); })
+	.attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; })
+    
+    node.append("circle")
+	.attr("r", 2.5);
+    
+    node.append("text")
+	.attr("dy", 3)
+	.attr("x", function(d) { return d.children ? -8 : 8; })
+	.style("text-anchor", function(d) { return d.children ? "end" : "start"; })
+	.text(function(d) {
+	    var did = getid(d.data);
+	    return did.substring(did.lastIndexOf(".") + 1);
+	});
+
+});
+
+
+</script>
+ 
+  </body>
+</html>

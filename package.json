@@ -1,0 +1,23 @@
+{
+  "name": "example_flask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "d3-hierarchy": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h4ck3rm1k3/extractr.git"
+  },
+  "author": "James Michael DuPont",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/h4ck3rm1k3/extractr/issues"
+  },
+  "homepage": "https://github.com/h4ck3rm1k3/extractr#readme"
+}
