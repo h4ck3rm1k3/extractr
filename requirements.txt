@@ -9,7 +9,10 @@
 #-e git+https://github.com/bollwyvl/flask-reloaded.git#egg=flaskreloaded
 #-e git+https://github.com/pallets/werkzeug.git#egg=werkzeug
 #-e git+https://github.com/vakata/jstree.git#egg=jstree
--e git+https://github.com/lobeck/flask-bower.git#egg=flaskbower
+#-e git+https://github.com/lobeck/flask-bower.git#egg=flaskbower
+
+-e git+https://github.com/mattupstate/flask-security.git#egg=flasksecurity
+-e git+https://github.com/arvindkhadri/flask-social.git#egg=flasksocial
 
 #git://git.launchpad.net/python-pouchdb
 #git://github.com/BernardoGO/PyDB.git

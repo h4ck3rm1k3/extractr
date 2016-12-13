@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FB</title>
+    <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.js') }}"></script>
+    <!-- <script src="{{ url_for('bower.static', filename='facebook.lite/build/facebook.lite.js') }}"></script> -->
+    <!-- <script src="http://connect.facebook.net/en_US/all.js"></script> -->
+    <!-- <script src="{{ url_for('bower.static', filename='facebook.lite/build/facebook.official.debug.js') }}"></script> -->
+    
+    
+  </head>
+  <body>
+    <h1>fb</h1>
+  <body>
+
+    <div id="fb-root"></div>
+    <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+  </body>
+  <fb:login-button autologoutlink="true" onlogin="OnRequestPermission();">
+  </fb:login-button>
+
+<script>
+  window.fbAsyncInit = function() {
+  FB.init({
+  appId      : '345240415858554',
+  xfbml      : true,
+  cookie: true,   
+  version    : 'v2.8'
+  });
+  FB.AppEvents.logPageView();
+  FB.login(function(response) {
+  console.log(response);
+  
+  if (response.authResponse) {
+  console.log('Welcome!  Fetching your information.... ');
+  FB.api('/me', function(response) {
+  console.log('Good to see you, ' + response.name + '.');
+  });
+  } else {
+  console.log('User cancelled login or did not fully authorize.');
+  }
+  });
+  
+  FB.ui(
+  {
+  method: 'share',
+  href: 'https://developers.facebook.com/docs/'
+  }, function(response){
+    console.log(response);
+  });
+
+
+<!-- FB.ui({ -->
+<!--   method: 'share_open_graph', -->
+<!--   action_type: 'og.likes', -->
+<!--   action_properties: JSON.stringify({ -->
+<!--     object:'https://developers.facebook.com/docs/', -->
+<!--   }) -->
+<!-- }, function(response){ -->
+<!--   // Debug response (optional) -->
+<!--   console.log(response); -->
+<!--   }); -->
+  
+  
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+  // js.src = "//connect.facebook.net/en_US/sdk.js";
+  js.src = "//connect.facebook.net/en_US/sdk/debug.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  
+</script>
+
+  
+  <!-- <div id="fb-root"></div> -->
+<!-- <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button> -->
+<!-- </body> -->
+<!-- <fb:login-button autologoutlink="true" onlogin="OnRequestPermission();"> -->
+<!-- </fb:login-button> -->
+<!-- <script language="javascript" type="text/javascript"> -->
+<!--   FB.init({ -->
+<!--   appId: '345240415858554', -->
+<!--   status: true,  -->
+<!--   cookie: true,  -->
+<!--   xfbml: true -->
+<!--   });     -->
+<!-- </script> -->
+
+<!--     <script> -->
+<!--       // oauthRedirectURL = "https://www.facebook.com/connect/login_success.html"; -->
+<!-- var redirect='https://www.facebook.com/connect/login_success.html' -->
+<!-- $(function() { -->
+<!--     FB.init({ -->
+<!-- 	appId      : '345240415858554', // App ID  -->
+<!-- 	status     : true, // check login status -->
+<!-- 	//    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File -->
+<!-- 	cookie     : true, // enable cookies to allow the server to access the session -->
+<!-- 	xfbml      : true,  // parse XFBML -->
+<!-- 	//#type       : 'user_agent' -->
+<!-- 	//'redirect_uri'       : redirect, -->
+<!--     }); -->
+<!--     FB.login(function(response) { -->
+<!-- 	if (response.authResponse) { -->
+<!-- 	    console.log('Welcome!  Fetching your information.... '); -->
+<!-- 	    FB.api('/me', function(response) { -->
+<!-- 		console.log('Good to see you, ' + response.name + '.'); -->
+<!-- 	    }); -->
+<!-- 	} else { -->
+<!-- 	    console.log('User cancelled login or did not fully authorize.'); -->
+<!-- 	} -->
+<!--     }); -->    
+<!--   FB.Event.subscribe('auth.authResponseChange', function(response) { -->
+<!--     // Here we specify what we do with the response anytime this event occurs.  -->
+<!--     if (response.status === 'connected') { -->
+<!--       // The response object is returned with a status field that lets the app know the current -->
+<!--       // login status of the person. In this case, we're handling the situation where they  -->
+<!--       // have logged in to the app. -->
+<!-- 	//testAPI(); -->
+<!-- 	// Here we run a very simple test of the Graph API after login is successful.  -->
+<!-- // This testAPI() function is only called in those cases.  -->
+<!-- 	console.log('Welcome!  Fetching your information.... '); -->
+<!-- 	FB.api('/me', function(response) { -->
+<!-- 	    console.log('Good to see you, ' + response.name + '.'); -->
+<!-- 	}); -->	
+<!--     } else if (response.status === 'not_authorized') { -->
+<!--       // In this case, the person is logged into Facebook, but not into the app, so we call -->
+<!--       // FB.login() to prompt them to do so.  -->
+<!--       // In real-life usage, you wouldn't want to immediately prompt someone to login  -->
+<!--       // like this, for two reasons: -->
+<!--       // (1) JavaScript created popup windows are blocked by most browsers unless they  -->
+<!--       // result from direct user interaction (such as a mouse click) -->
+<!--       // (2) it is a bad experience to be continually prompted to login upon page load. -->
+<!--       FB.login(); -->
+<!--     } else { -->
+<!--       // In this case, the person is not logged into Facebook, so we call the login()  -->
+<!--       // function to prompt them to do so. Note that at this stage there is no indication -->
+<!--       // of whether they are logged into the app. If they aren't then they'll see the Login -->
+<!--       // dialog right after they log in to Facebook.  -->
+<!--       // The same caveats as above apply to the FB.login() call here. -->
+<!--       FB.login(); -->
+<!--     } -->
+<!--   }); -->
+<!-- }); -->
+<!--     </script> -->
+
+  </body>
+</html>
+

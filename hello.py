@@ -80,6 +80,10 @@ def treed3(name=None):
 def tweets():
     return render_template('tweets.html')
 
+@app.route('/facebook/')
+def fb():
+    return render_template('fb.html')
+
 #
 #Property: EventWho,
 #type:              Agent,
