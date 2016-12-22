@@ -1,14 +1,17 @@
 <html>
-  <head>
+    <head>
+    <meta charset="utf-8">
     <script type="text/javascript" src="../bower_components/openpgp/dist/openpgp.js"></script>
     <script type="text/javascript" src="../bower_components/js-storage/js.storage.js"></script>
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="session.js"></script>
   </head>
   <body>
-    <script>
-
+    <script type="text/javascript">
      
 $(document).ready(function() {
+
+var sid = get_session();
 
     storage=Storages.localStorage;
 
@@ -21,7 +24,7 @@ $(document).ready(function() {
 	if (storage.isEmpty('username')) {
 
 // load set_password.html
-
+	    $('#res').html("<form><label>email</lable><input type='text' id=email/></form>");
 	}
 
 	if (!storage.isEmpty('username')) {
@@ -70,7 +73,8 @@ $(document).ready(function() {
 	    {
 		'pubkey':pubkey,
 		'keyid':keyid,
-		'keyfinger':keyfinger,
+		//'keyfinger':keyfinger,
+		'sid': sid, // the session id
 		
 	    },
 	    function(data){
