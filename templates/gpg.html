@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <script type="text/javascript" src="../bower_components/openpgp/dist/openpgp.js"></script>
+    <script type="text/javascript" src="../bower_components/js-storage/js.storage.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+  </head>
+  <body>
+    <script>
+
+     
+$(document).ready(function() {
+
+    storage=Storages.localStorage;
+
+    if (storage.isEmpty('privkey') && storage.isEmpty('keyid')) {
+	
+	var username;
+	var useremail;
+	var password;
+
+	if (storage.isEmpty('username')) {
+
+// load set_password.html
+
+	}
+
+	if (!storage.isEmpty('username')) {
+	    username=storage.get('username')
+	    useremail=storage.get('useremail')
+	    password=storage.get('password')
+	}
+	
+	var options = {
+	    userIds: [{ name:username,
+			email:useremail }], // multiple user IDs
+	    numBits: 4096,                                            // RSA key size
+	    passphrase: password         // protects the private key
+	};
+
+
+	//storage.set('user','h4ck3rm1k3')
+	openpgp.generateKey(options).then(function(key) {
+	    var privkey = key.privateKeyArmored; // '-----BEGIN PGP PRIVATE KEY BLOCK ... '
+	    var pubkey = key.publicKeyArmored;   // '-----BEGIN PGP PUBLIC KEY BLOCK ... '
+	    var keyid = key.key.primaryKey.getKeyId().toHex();   
+	    var keyfinger = key.key.primaryKey.getFingerprint();  
+	    storage.set('privkey',privkey)
+            storage.set('pubkey',pubkey)
+	    storage.set('keyid',keyid)
+	    storage.set('keyfinger',keyfinger)
+	});
+    }
+    else if (storage.isEmpty('keyid')) {
+	var pubkey = storage.get('pubkey')
+	var pubkeys = openpgp.key.readArmored(pubkey).keys;
+	var keyid = pubkeys[0].primaryKey.getKeyId().toHex();   
+	var keyfinger = pubkeys[0].primaryKey.getFingerprint();  
+	storage.set('keyid',keyid)
+	storage.set('keyfinger',keyfinger)	
+    }
+    //else
+    {
+	var pubkey = storage.get('pubkey')
+	var keyid = storage.get('keyid')
+	
+	var keyfinger = storage.get('keyfinger')
+	//alert(pubkey);
+	$.post(
+	    'http://h4ck3rm1k3.sdf.org/a/gpg/postkey',
+	    {
+		'pubkey':pubkey,
+		'keyid':keyid,
+		'keyfinger':keyfinger,
+		
+	    },
+	    function(data){
+		//alert(data);
+		$('#res').html(data);
+	    },
+	    'text'
+	);
+    }
+
+});
+
+
+    </script>
+
+    <a href=gpg_read.html>read</a>
+    <pre id='res'>
+    </pre>
+    
+    </body>
+</html>

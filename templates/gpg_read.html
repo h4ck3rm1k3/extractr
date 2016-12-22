@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <script type="text/javascript" src="../bower_components/openpgp/dist/openpgp.js"></script>
+    <script type="text/javascript" src="../bower_components/js-storage/js.storage.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+  </head>
+  <body>
+    <script>
+
+$(document).ready(function() {
+
+    storage=Storages.localStorage;
+    
+    if (!storage.isEmpty('privkey')) {
+	var privkey = storage.get('privkey')
+	var pubkey = storage.get('pubkey')
+	var keyid = storage.get('keyid')	
+var keyfinger = storage.get('keyfinger')
+var passphrase = storage.get('password')
+
+
+	$.get('http://h4ck3rm1k3.sdf.org/a/gpg/secrets',{'keyfinger' : keyfinger, 'keyid' : keyid},  function(data){
+$('#res').html(data);
+
+var privkey1 =openpgp.key.readArmored(privkey).keys[0];
+privkey1.decrypt(passphrase);
+options = {
+message: openpgp.message.readArmored(data),     // parse armored message
+publicKeys: openpgp.key.readArmored(pubkey).keys,    // for verification (optional)
+privateKey: privkey1 // for decryption privateKey.keys[0]
+};
+
+openpgp.decrypt(options).then(function(plaintext) {
+//return plaintext.data;
+$('#res').html(plaintext.data);
+});
+
+
+	    }
+	);
+    }
+
+});
+
+
+</script>
+    <pre id='res'>
+    </pre>
+    </body>
+</html>
