@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../bower_components/js-storage/js.storage.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="session.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+$(document).ready(function() {
+    
+    var sid = get_session();
+    $.get(
+	'http://h4ck3rm1k3.sdf.org/a/foursquare',
+	{
+	    'sid': sid, // the session id
+	},
+	function(data){
+	    $('#res').html(data);
+	},
+	'text'
+    );
+});
+		  
+</script>
+
+<a href='http://h4ck3rm1k3.sdf.org/a/foursquare/'>main</a>
+<a href='http://h4ck3rm1k3.sdf.org/a/foursquare/oauth/authorize'>auth</a>
+<a href='http://h4ck3rm1k3.sdf.org/a/foursquare/users/self'>self</a>
+
+    <pre id='res'>
+</pre>    
+</body>
+</html>
