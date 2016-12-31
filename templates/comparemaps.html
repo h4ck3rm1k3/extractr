@@ -1,0 +1,14 @@
+<html manifest="{{ url_for('bower.static', filename='compare/app.cache') }}">
+  <head>
+    <meta charset="utf-8">
+    <script src="{{ url_for('bower.static', filename='jquery/dist/jquery.js') }}"></script>
+    <script src="{{ url_for('bower.static', filename='js-storage/js.storage.js') }}"></script>
+  </head>
+  <body>
+    <script type="text/javascript"
+	    extensions="js"
+	    id="bl-script"
+	    main="{{ url_for('bower.static', filename='compare/compare.js') }}" 
+	    src="{{ url_for('bower.static', filename='browserify-loader/browserify-loader.js') }}"></script>
+  </body>
+</html>

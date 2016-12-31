@@ -84,6 +84,10 @@ def tweets():
 def fb():
     return render_template('fb.html')
 
+@app.route('/compare/')
+def compare():
+    return render_template('comparemaps.html')
+
 #
 #Property: EventWho,
 #type:              Agent,
