@@ -84,6 +84,22 @@ def tweets():
 def fb():
     return render_template('fb.html')
 
+@app.route('/sw/', defaults={'path': ''})
+@app.route('/sw/<path:path>')
+@app.route('/sw/')
+def sw(path=None):
+    return render_template('sw.html')
+
+@app.route('/sw.js')
+def swjs():
+    #return "todo"
+    return app.send_static_file('sw/service_worker.js')
+
+@app.route('/favicon.ico')
+def favico():
+    return app.send_static_file('favicon.ico')
+
+
 @app.route('/compare/')
 def compare():
     return render_template('comparemaps.html')
