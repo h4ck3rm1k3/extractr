@@ -1,4 +1,14 @@
 //
+$=require('jquery');
+var Storages = require('js-storage');
+
+// alwaysUseJsonInStorage
+// initNamespaceStorage
+// localStorage
+// namespaceStorages
+// removeAllStorages
+// sessionStorage
+
 console.log('compare loaded');
 
 function onload () {

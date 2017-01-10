@@ -4,14 +4,27 @@ from flask import Flask, request, send_from_directory
 from flask_reloaded import Reloaded
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_bower import Bower
+#from flask_webpack import Webpack
+#webpack = Webpack()
+
 app = Flask(__name__)
+
+
 app.debug = True
-app.config['BOWER_TRY_MINIFIED']=False
-app.config['SECRET_KEY'] = 'flskjsdf994994304023.,m.,mvxclds'
-app.config['DEBUG_TB_PANELS'] = (
-    # ...
-    'flask_reloaded.panels.ReloadedDebugPanel',
-)
+   
+params = {
+    'BOWER_TRY_MINIFIED' : False,
+    'SECRET_KEY' : 'flskjsdf994994304023.,m.,mvxclds',
+    'DEBUG_TB_PANELS': (    'flask_reloaded.panels.ReloadedDebugPanel',),
+    'DEBUG' : True,
+#    'WEBPACK_MANIFEST_PATH': 'static/compare/compare-manifest.json',
+#    'WEBPACK_ASSETS_URL'  : 'static/',
+}
+
+app.config.update(params)
+    
+#webpack.init_app(app)
+
 DebugToolbarExtension(app)
 reloaded = Reloaded(app)
 Bower(app)     

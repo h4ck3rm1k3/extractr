@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "d3-hierarchy": "^1.0.3"
+    "d3-hierarchy": "^1.0.3",
+    "jquery": "^3.1.1",
+    "js-storage": "^1.0.1",
+    "manifest-revision-webpack-plugin": "^0.3.0",
+    "openpgp": "^2.3.5"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
