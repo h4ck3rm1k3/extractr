@@ -4,11 +4,13 @@ from flask import Flask, request, send_from_directory
 from flask_reloaded import Reloaded
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_bower import Bower
+import pprint
 #from flask_webpack import Webpack
 #webpack = Webpack()
 
-app = Flask(__name__)
+import yelp
 
+app = Flask(__name__)
 
 app.debug = True
    
@@ -41,53 +43,6 @@ def hello(name=None):
 
 
 import pprint
-import owlready
-from owlready import *
-onto_path.append(os.path.dirname(__file__))
-onto = load_ontology_from_file("floss-events.owl")
-import types
-import inspect
-
-def traverse(hier):
-    ret = []
-    cobj = None
-    for obj in hier :#
-        lt=type(obj)
-        if lt==tuple: # is an object
-            name = obj[0]
-            parent = obj[1]
-            cobj= {
-                'name': str(name),
-                'parent': str(parent),
-            }
-            ret.append(cobj)            
-        elif lt==list:
-            cobj['children']=traverse(obj)
-    if len(ret) == 1:
-        return ret[0]
-    else:
-        return ret
-
-def cleantree():
-    hier = inspect.getclasstree(onto.classes, unique=True)
-    d = traverse(hier)
-    return d
-    
-@app.route('/treedata/')
-def get_tree():
-    hier2 = inspect.getclasstree(onto.classes, unique=True)
-    hier = cleantree()
-    return "<html><body><h1>Hier</h1><pre>" + json.dumps(hier) +"<pre><h1>Input</h1><pre>" + str(hier2) +"<pre></body></html>"
-
-@app.route('/tree/')
-def tree(name=None):
-    hier = cleantree()
-    return render_template('tree.html',hier=hier)
-
-@app.route('/treed3/')
-def treed3(name=None):
-    hier = cleantree()
-    return render_template('treed3.html',hier=hier)
 
 @app.route('/tweets/')
 def tweets():
@@ -117,45 +72,35 @@ def favico():
 def compare():
     return render_template('comparemaps.html')
 
-#
-#Property: EventWho,
-#type:              Agent,
-#                   Role
+import yelp
+@app.route('/yelp/v3/oauth2/token' , methods=['POST'] )
+#@crossdomain(origin='*')
+def yelp_token():
+    return yelp.obtain_bearer_token()
 
-#Prop:     EventWhat,
-# to what :
-# PhysicalThing
-# AbstractDocument
-# via UserInterface
-# DataResource
-# to what that is formatted
-# Dataformat
-#type              Model,
-# Event :
+@app.route('/yelp/v3businesses/search', methods=['GET' ]) #?term=food&location=08618&limit=10
+def yelp_biz_search():
+    # GET /yelp/v3businesses/search?term=food&location=08618&limit=10 HTTP/1.1
+    # authorization: Bearer JX_3SDC9tLlj4OtGqs3jewsPWF0xV4nfrqIDdgAjKp3uLeZxDK9CZpU4K-zR9RYEgwCv8on63odsSRaobgNvO0eVdVJWCZ4IYuiCepWVFdM8m80NEtDG0KADtrGAWHYx
+    # Cookie: rg_cookie_session_id=229187570
+    bearer = request.headers['Authorization']
+    bearer = bearer.replace('Bearer ','')
+    #pprint.pprint(request.headers)
+    #EnvironHeaders([('Host', 'h4ck3rm1k3zone1.ddns.net:25000'), ('Connection', 'keep-alive'), ('Cookie', 'rg_cookie_session_id=229187570'), ('Pragma', 'no-cache'),
+    #('Authorization', 'Bearer JX_3SDC9tLlj4OtGqs3jewsPWF0xV4nfrqIDdgAjKp3uLeZxDK9CZpU4K-zR9RYEgwCv8on63odsSRaobgNvO0eVdVJWCZ4IYuiCepWVFdM8m80NEtDG0KADtrGAWHYx'), ('Content-Type', ''), ('Accept', '*/*'), ('Content-Length', ''), ('User-Agent', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36'), ('Accept-Language', 'en-US,en;q=0.8'), ('Accept-Encoding', 'gzip, deflate, sdch'), ('Cache-Control', 'no-cache'), ('Referer', 'http://h4ck3rm1k3zone1.ddns.net:25000/yelp/')])
 
-#Prop:     EventWhere
-#            PhysicalLocation
-#            DataResource
+    #bearer_token
+    term = request.args['term']
+    location = request.args['location']
+    res =  yelp.search(bearer, term, location)
+    #pprint.pprint(res)
+    #return pprint.pformat(res)
+    return flask.jsonify(**res)
 
-#Prop:     EventWhen,
-#type:        Event,
+@app.route('/yelp/')
+def yelp2():
+    return render_template('yelp.html')
 
-# How
-#Prop          EventWhy,
-# cause, purpose : Model
-
-#    Visitor declares interest in hearing a talk on topic X
-#                 EventExpressesInterestInLearning,
-
- 
-@app.route('/onto/')
-def info():
-    b = onto.Bus()
-    #pprint.pprint(b._instance_to_n3())
-    #pprint.pprint(b._instance_to_owl())
-
-
-    return "<html><body><h1>Hello</h1><pre>" + pprint.pformat(onto.__dict__) + "</pre><pre>"+ pprint.pformat(dir(onto)) + "</pre><pre>"+ pprint.pformat(b) + "</pre><pre>"+ pprint.pformat(dir(b)) + "</pre><pre>"+ pprint.pformat(b.__dict__)+"</body></html>"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=25000, debug=True)

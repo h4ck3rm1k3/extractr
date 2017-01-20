@@ -141,3 +141,5 @@ flycheck_*.el
 
 # directory configuration
 .dir-locals.el
+
+yelp_secrets.py
