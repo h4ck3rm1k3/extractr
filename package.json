@@ -9,7 +9,7 @@
     "jquery": "^3.1.1",
     "js-storage": "^1.0.1",
     "manifest-revision-webpack-plugin": "^0.3.0",
-    "openpgp": "^2.3.5",
+    "openpgp": "^4.6.2",
     "react": "^15.4.2",
     "webpack": "^1.14.0",
     "yelpv3": "^1.2.1"
